@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="perfil">
+            <div class="perfil-info">
+                <div class="foto-perfil">
+                    <img src="" alt="Foto de Perfil">
+                </div>
+                <div class="texto-perfil">
+                     <h1>Instrutor de TI</h1>
+                    <h2>Pedro Henrique Oliveira</h2>
+                 </div>
+            </div> 
+        </section>
+        <hr>
+
+        <section class="Sobre">
+            <div class="foto-ilustrativa">
+                <img src="" alt="Imagem ilustrativa">
+             </div>
+             <div class="texto-descricao">
+                <p>Me Chamo Pedro Henrique, tenho 20 anos, sou formado no Ensino Médio/Técnico no curso de Meio Ambiente.<br>
+                Atualmente estou trabalhando como jovem aprendiz pela manhã e estudando ADS pela tarde.<br>tenho vontade de fazer intercâmbio e estou mu
+                ito extrovertido e comunicativo.</p>
+                
+             </div>
+        </section>
+        <hr>
+    
+        <section class="projetos">
+            <h2>Projetos</h2>
+            <div class="cards-projetos">
+                <div class="card">
+                    <img src="" alt="Projeto Prime Video">
+                    <p>Header Prime Video</p>   
+                 </div>
+                 <div class="card">
+                    <img src="" alt="Projeto Mercado Livre">
+                    <p>Header Mercado Livre</p>
+                </div>
+             </div>
+        </section>
+        <hr>
+
+        <section class="contato">
+            <div class="formulario"> <!--Sugiro remover essa div, da para dimensionar a partir da tag form-->
+                <form action="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$" placeholder="Digite seu nome completo" required><br><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="meuemail@gmail.com" required><br><br>
+                    <label for="Mensagem">Mensagem</label>
+                    <textarea placeholder="Mensagem" required></textarea> 
+
+                    <div class="botoes"> <br>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mensagem-lateral">
+                <h3>Vamos Criar <br>algo juntos!</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Pedro Henrique Oliveira</p>
+    </footer>
+</body>
+</html>
