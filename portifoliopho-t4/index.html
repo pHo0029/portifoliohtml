@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Portifólio pH Oliveira</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+
     <header>
         <nav>
             <ul>
@@ -22,53 +24,76 @@
         <section class="perfil">
             <div class="perfil-info">
                 <div class="foto-perfil">
-                    <img src="" alt="Foto de Perfil">
+                    <img src="./assets/imgs/perfil pho.png" alt="Foto de Perfil">
                 </div>
                 <div class="texto-perfil">
-                     <h1>Instrutor de TI</h1>
-                    <h2>Pedro Henrique Oliveira</h2>
-                 </div>
-            </div> 
+                    <h1>Instrutor de TI</h1>
+                    <h2> pH Oliveira</h2>
+                </div>
+            </div>
         </section>
         <hr>
 
-        <section class="Sobre">
-            <div class="foto-ilustrativa">
-                <img src="" alt="Imagem ilustrativa">
-             </div>
-             <div class="texto-descricao">
-                <p>Me Chamo Pedro Henrique, tenho 20 anos, sou formado no Ensino Médio/Técnico no curso de Meio Ambiente.<br>
-                Atualmente estou trabalhando como jovem aprendiz pela manhã e estudando ADS pela tarde.<br>tenho vontade de fazer intercâmbio e estou mu
-                ito extrovertido e comunicativo.</p>
-                
-             </div>
+        <section id="Sobre">
+
+            <h2>Sobre Mim</h2>
+            <div class="tudo-sobre">
+
+                <div class="foto-ilustrativa">
+                    <img src="./assets/imgs/imagem programação.png" alt="Imagem ilustrativa">
+                </div>
+                <div class="texto-descricao">
+                    <p><strong>Me chamo Pedro Henrique</strong>, tenho 20 anos, sou formado no Ensino Médio/Técnico com habilitação em
+                        Meio Ambiente e atualmente trabalho como Jovem Aprendiz pela manhã, além de cursar <strong>Análise e
+                        Desenvolvimento de Sistemas (ADS)</strong> no turno da tarde. <br>
+                        Sou apaixonado por tecnologia desde cedo e estou em constante busca por aprendizado e
+                        crescimento na área de programação. Tenho facilidade com computadores, gosto de resolver
+                        problemas e estou sempre em busca de desafios que me permitam evoluir como desenvolvedor. <br>
+                        No dia a dia, utilizo o computador como uma ferramenta essencial para agilizar tarefas, estudar
+                        novas linguagens, criar projetos e organizar minha rotina. Gosto de aprender na prática e
+                        acredito que a melhor forma de crescer é se mantendo curioso e comprometido. <br>
+                        Me considero uma pessoa <strong>comunicativa, extrovertida e que trabalha muito bem em equipe.</strong> Acredito
+                        no poder da colaboração e da troca de experiências para alcançar resultados melhores. <br>
+                        Tenho o sonho de fazer um intercâmbio no futuro, não só para aprimorar meu inglês, mas também
+                        para vivenciar novas culturas e trazer essa bagagem para minha vida pessoal e profissional. <br>
+                        Atualmente, estou focado em desenvolver minhas habilidades como programador, aprendendo
+                        linguagens como <strong> HTML, CSS e JavaScript, além de ferramentas como Git e GitHub</strong>. Meu objetivo é
+                        construir uma carreira sólida na área de tecnologia e contribuir de forma significativa em cada
+                        projeto que eu participar.</p>
+
+                    </p>
+
+                </div>
+            </div>
         </section>
         <hr>
-    
-        <section class="projetos">
+
+        <section id="Projetos">
             <h2>Projetos</h2>
             <div class="cards-projetos">
                 <div class="card">
-                    <img src="" alt="Projeto Prime Video">
-                    <p>Header Prime Video</p>   
-                 </div>
-                 <div class="card">
-                    <img src="" alt="Projeto Mercado Livre">
+                    <img src="./assets/imgs/prime img.png" alt="Projeto Prime Video">
+                    <p>Header Prime Video</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/imgs/mercado livre.png" alt="Projeto Mercado Livre">
                     <p>Header Mercado Livre</p>
                 </div>
-             </div>
+            </div>
         </section>
         <hr>
 
-        <section class="contato">
-            <div class="formulario"> <!--Sugiro remover essa div, da para dimensionar a partir da tag form-->
+        <section id="Contatos">
+            <h2>Contatos</h2>
+           <!--Sugiro remover essa div, da para dimensionar a partir da tag form-->
                 <form action="post">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$" placeholder="Digite seu nome completo" required><br><br>
+                    <input type="text" id="nome" name="nome" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$"
+                        placeholder="Digite seu nome completo" required><br><br>
                     <label for="email">E-mail:</label>
                     <input type="email" id="email" name="email" placeholder="meuemail@gmail.com" required><br><br>
                     <label for="Mensagem">Mensagem</label>
-                    <textarea placeholder="Mensagem" required></textarea> 
+                    <textarea placeholder="Mensagem" required></textarea>
 
                     <div class="botoes"> <br>
                         <button type="submit">Enviar</button>
@@ -82,7 +107,8 @@
     </main>
 
     <footer>
-        <p>Desenvolvido por Pedro Henrique Oliveira</p>
+        <p>Desenvolvido por pH Oliveira</p>
     </footer>
 </body>
+
 </html>
