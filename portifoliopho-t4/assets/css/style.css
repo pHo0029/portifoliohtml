@@ -1,69 +1,200 @@
-*{
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration:none;
-    color: black;
-    font-family: "Montserrat", sans-serif;
 }
 
-header nav{
-  background-color: black;
-  display: flex;
-  justify-content:center 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
-a{
-    color: white;
-}
-ul{
-    display: flex;
-    gap: 70px;
-    padding: 12px;
-    justify-content: center;
-}
-.perfil-info{
-    display: flex;
-    gap: 100px;
-    padding:10px;
-}
-.texto-perfil{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.tudo-sobre{
-    display: flex;
-    gap: 30vw;
-    padding: 10px;
-    
-}
-#Sobre{
-     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.tudo-sobre p{  
-    width: 900px;
-    font-size:larger
-    
-}
-#Projetos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.cards-projetos{
-    display: flex;
-  gap: 800px;
-}
-.card p{
+
+header {
+    background-color: #1a1a40;
+    padding: 20px 0;
     text-align: center;
 }
-#Contatos{
+
+nav ul {
+    list-style: none;
     display: flex;
-  align-items: center;
-  flex-direction: column;
+    justify-content: center;
+    gap: 40px;
 }
-.form{
- display: flex;
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00c3ff;
+}
+
+/* Seção de perfil */
+.perfil {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.perfil-info img {
+    width: 100px;
+}
+
+.perfil-info h1 {
+    font-size: 24px;
+    color: #1a1a40;
+}
+
+.perfil-info h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #555;
+}
+
+/* Seção Sobre */
+#Sobre {
+    padding: 40px 20px;
+    background-color: #e9e9e9;
+}
+
+.tudo-sobre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.tudo-sobre img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.texto-descricao {
+    max-width: 600px;
+}
+
+/* Seção Projetos */
+#Projetos {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cards-projetos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Seção Contato */
+#Contatos {
+    background-color: #e9e9e9;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 12px;
+    background-color: #1a1a40;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00c3ff;
+    color: #000;
+}
+
+.mensagem-lateral {
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #1a1a40;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a40;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .tudo-sobre {
+        flex-direction: column;
+    }
+
+    .cards-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Contatos {
+        flex-direction: column;
+        align-items: center;
+    }
 }
